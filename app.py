@@ -1,10 +1,21 @@
 import streamlit as st
-st.write("hello World")
-st.title("My First Streamlit App")
-st.write("Welcome")
-st.write("Hello Vineela")
-st.write("Hello dev branch first commit")
-st.write("Hello, first merge")
-st.write("First pull and push")
-st.write("Verifying push and Pull")
-st.write("Verifying merge")
+import pandas as pd
+import matplotlib.pyplot as plt
+
+st.title("Online Foods")
+st.write("Data of online foods")
+df = pd.read_csv("onlinefoods.csv")
+st.write(df)
+
+fig, ax = plt.subplots()
+df.hist(
+    bins=8,
+    column="Age",
+    grid=False,
+    figsize=(8, 8),
+    color="#86bf91",
+    zorder=2,
+    rwidth=0.9,
+    ax=ax,
+  )
+st.write(fig)
