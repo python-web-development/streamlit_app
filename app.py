@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 st.title("Online Foods")
+st.write("Data of Onlinefoods")
 df = pd.read_csv("onlinefoods.csv")
 st.write(df)
 
