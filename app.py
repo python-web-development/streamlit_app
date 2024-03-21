@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 st.title("Online Foods")
-df = pd.read_csv(r"C:\Users\laksh\Downloads\onlinefoods.csv")
+df = pd.read_csv("onlinefoods.csv")
 st.write(df)
 
 fig, ax = plt.subplots()

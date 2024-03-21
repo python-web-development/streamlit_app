@@ -67,6 +67,7 @@ instance/
 
 # Scrapy stuff:
 .scrapy
+venv_st1
 
 # Sphinx documentation
 docs/_build/
@@ -131,7 +132,7 @@ venv.bak/
 # Spyder project settings
 .spyderproject
 .spyproject
-
+.venv_st1
 # Rope project settings
 .ropeproject
 
